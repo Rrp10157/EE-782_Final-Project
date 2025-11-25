@@ -95,3 +95,8 @@ Install required dependencies:
 ```bash
 pip install transformers datasets sentencepiece sacrebleu evaluate accelerate rouge-score
 
+
+🏋️ Training Instructions
+OPUS-MT Fine-Tuning
+
+Open the notebook:
