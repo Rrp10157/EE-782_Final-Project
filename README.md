@@ -64,7 +64,9 @@ setup:
     - pip install transformers datasets sentencepiece sacrebleu evaluate accelerate rouge-score
 
 training_instructions:
+
   opus_mt:
+  
     notebook: notebooks/EE782_FinalProject_Opus.ipynb
     environment: "Google Colab (T4 GPU recommended)"
     steps:
@@ -76,6 +78,7 @@ training_instructions:
       - Plot generation
 
   nllb_200:
+  
     notebook: notebooks/EE782_FinalProject_NLLB_final_submission.ipynb
     details:
       - "Loads multilingual tokenizer (eng_Latn / hin_Deva)"
@@ -85,8 +88,11 @@ training_instructions:
       - Logs training curves
 
 performance_summary:
+
   dataset: "5000 legal sentences (test set)"
+  
   metrics:
+  
     OPUS-MT:
       BLEU: 31.94
       ROUGE-L: 0.4412
@@ -98,11 +104,14 @@ performance_summary:
   conclusion: "NLLB-200 significantly outperforms OPUS-MT across all metrics."
 
 error_analysis:
+
   common_errors:
+  
     - Legal terminology mistranslations
     - Clause misalignment
     - Negation errors ("shall not", "may not")
     - Complex multi-clause structures
     - Statute references and abbreviations
     - Style consistency in formal Hindi
+    
   reference_report: report/EE782_Final_Project_Report.pdf
