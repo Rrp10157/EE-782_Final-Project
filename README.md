@@ -62,7 +62,7 @@ Install required dependencies:
 pip install transformers datasets sentencepiece sacrebleu evaluate accelerate rouge-score
 
 
-🏋️ Training Instructions
+## 🏋️ Training Instructions
 OPUS-MT Fine-Tuning
 
 Open the notebook: notebooks/EE782_FinalProject_Opus.ipynb
