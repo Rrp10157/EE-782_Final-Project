@@ -101,3 +101,65 @@ OPUS-MT Fine-Tuning
 
 Open the notebook: notebooks/EE782_FinalProject_Opus.ipynb
 
+
+Run end-to-end in Google Colab (T4 GPU recommended).
+The training loop includes:
+
+Tokenization
+
+Preprocessing
+
+Fine-tuning for 1000 steps
+
+Validation BLEU, ROUGE-L, ChrF
+
+Test set inference
+
+Plot generation
+
+NLLB-200 Fine-Tuning
+
+Open:
+
+notebooks/EE782_FinalProject_NLLB_final_submission.ipynb
+
+
+This notebook:
+
+Loads multilingual tokenizer with eng_Latn / hin_Deva
+
+Enables gradient checkpointing to fit model on Colab GPU
+
+Fine-tunes for up to 1000 steps
+
+Produces output CSV + performance metrics
+
+Logs training curves
+
+📈 Performance Summary
+Final Test Set Metrics (5000 legal sentences)
+Model	BLEU	ROUGE-L	ChrF
+OPUS-MT	31.94	0.4412	53.38
+NLLB-200 (1000-step run)	41.21	0.4929	63.27
+
+NLLB-200 significantly outperforms OPUS-MT across all metrics.
+
+🔍 Error Types Observed
+
+Common translation challenges include:
+
+Legal terminology mistranslations
+
+Clause misalignment
+
+Negation errors (“shall not”, “may not”)
+
+Complex multi-clause structures
+
+Statute references and abbreviations
+
+Style consistency in formal Hindi
+
+Detailed analysis in:
+report/EE782_Final_Project_Report.pdf
+
