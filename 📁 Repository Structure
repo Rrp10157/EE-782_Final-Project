@@ -1,1 +1,15 @@
-
+📁 root/
+│
+├── notebooks/
+│ ├── EE782_FinalProject_Opus.ipynb
+│ ├── EE782_FinalProject_NLLB_final_submission.ipynb
+│
+├── data/
+│ ├── train_data.xlsx
+│ ├── validation_data.xlsx
+│ ├── test_data.xlsx
+│
+├── results/
+│ ├── opus_test_en_hi_model_hindi.csv
+│ ├── nllb_test_en_hi_model_hindi.csv
+|── README.md
