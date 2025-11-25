@@ -49,3 +49,49 @@ Both models were trained and evaluated on **Indian legal-domain parallel data**,
 │ ├── EE782_Final_Project_Report.pdf
 │
 └── README.md
+
+
+
+---
+
+## 🚀 Models Used
+
+### **1. OPUS-MT (Helsinki-NLP/opus-mt-en-hi)**
+- ~90M parameter bilingual Transformer  
+- Trained originally on OPUS corpus  
+- Lightweight & fast  
+- Serves as a **baseline**
+
+### **2. NLLB-200 Distilled 600M (facebook/nllb-200-distilled-600M)**
+- 600M parameter multilingual model  
+- Trained across 200+ languages  
+- Strong zero-shot & fine-tuned performance  
+- Achieved highest legal MT accuracy in our experiments  
+
+---
+
+## 📊 Dataset
+
+We use a curated English–Hindi legal dataset:
+
+| Split         | Size      | Purpose                 |
+|---------------|-----------|--------------------------|
+| Train         | 17,500    | Model fine-tuning        |
+| Validation    | 7,500     | Metric-based evaluation  |
+| Test          | 5,000     | Final performance        |
+
+All text samples are judicial sentences, covering:
+- High Court & Supreme Court case orders  
+- Affidavits  
+- Statutory language  
+- Legal arguments & procedural text  
+
+---
+
+## ⚙️ Installation
+
+Install required dependencies:
+
+```bash
+pip install transformers datasets sentencepiece sacrebleu evaluate accelerate rouge-score
+
