@@ -60,6 +60,7 @@ Install required dependencies:
 
 setup:
   install_commands:
+  
     - pip install transformers datasets sentencepiece sacrebleu evaluate accelerate rouge-score
 
 training_instructions:
