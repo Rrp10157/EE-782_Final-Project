@@ -99,4 +99,5 @@ pip install transformers datasets sentencepiece sacrebleu evaluate accelerate ro
 🏋️ Training Instructions
 OPUS-MT Fine-Tuning
 
-Open the notebook:
+Open the notebook: notebooks/EE782_FinalProject_Opus.ipynb
+
